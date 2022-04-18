@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CryptoReact/static/css/main.5c393e91.css",
-    "main.js": "/CryptoReact/static/js/main.2a6943b1.js",
-    "static/js/787.7a722091.chunk.js": "/CryptoReact/static/js/787.7a722091.chunk.js",
-    "index.html": "/CryptoReact/index.html",
-    "main.5c393e91.css.map": "/CryptoReact/static/css/main.5c393e91.css.map",
-    "main.2a6943b1.js.map": "/CryptoReact/static/js/main.2a6943b1.js.map",
-    "787.7a722091.chunk.js.map": "/CryptoReact/static/js/787.7a722091.chunk.js.map"
+    "main.css": "/cryptoreact/static/css/main.5c393e91.css",
+    "main.js": "/cryptoreact/static/js/main.6d297cea.js",
+    "static/js/787.7a722091.chunk.js": "/cryptoreact/static/js/787.7a722091.chunk.js",
+    "index.html": "/cryptoreact/index.html",
+    "main.5c393e91.css.map": "/cryptoreact/static/css/main.5c393e91.css.map",
+    "main.6d297cea.js.map": "/cryptoreact/static/js/main.6d297cea.js.map",
+    "787.7a722091.chunk.js.map": "/cryptoreact/static/js/787.7a722091.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c393e91.css",
-    "static/js/main.2a6943b1.js"
+    "static/js/main.6d297cea.js"
   ]
 }
