@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import ReactDOM from "react-dom/client";
 import HomePage from "./pages/HomePage";
@@ -9,13 +9,12 @@ import SinglePage from "./pages/SinglePage";
 
 function App() {
   return (
-    <div className="bg-dark bg.gradient h-100 w-100 text-light">
+    <div className="w-100vw text-light ">
+      <div className="background"></div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Header />}>
-            <Route index element={<HomePage />} />
-            <Route path="/:cryptoName" element={<SinglePage />} />
-          </Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/:cryptoName" element={<SinglePage />} />
         </Routes>
       </BrowserRouter>
     </div>

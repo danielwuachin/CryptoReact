@@ -1,10 +1,9 @@
-import Loader from "../components/Loader";
 import TableAllCrypto from "../components/TableAllCrypto";
 import Title from "../components/Title";
 
 const MainComponent = () => {
   return (
-    <div className="h-100">
+    <div className="mx-4">
       <Title />
       <TableAllCrypto />
     </div>

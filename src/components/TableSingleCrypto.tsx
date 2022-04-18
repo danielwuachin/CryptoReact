@@ -1,5 +1,4 @@
 import { Table } from "react-bootstrap";
-import { formatLastWeekDate } from "../helpers/FormatDates";
 import { FetchSingleCrypto } from "../interfaces/Interfaces";
 
 interface SingleCryptoData {
@@ -7,31 +6,29 @@ interface SingleCryptoData {
 }
 
 const TableSingleCrypto = ({ data }: SingleCryptoData) => {
-  console.log(data);
-  let today = new Date();
   let reverseData: FetchSingleCrypto[] = [];
+
   data.forEach((el) => {
     reverseData.unshift(el);
   });
-  console.log(reverseData);
+
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
+      <h4 className="mb-3">Historical data (last 7 days)</h4>
       <Table
         responsive
         striped
         hover
         variant="dark"
         id="example-fade-text"
-        className="  text-center "
+        className="text-center "
       >
         <thead>
           <tr>
             <th style={{ width: 100 }} className="vw-4">
               Date
             </th>
-            <th style={{ width: 250 }} className="min-vw-22">
-              Open price
-            </th>
+            <th style={{ width: 250 }}>Open price</th>
             <th>Close Price</th>
             <th style={{ width: 100 }}>Higher</th>
             <th>Lower</th>
@@ -52,7 +49,7 @@ const TableSingleCrypto = ({ data }: SingleCryptoData) => {
                 )
             )
           ) : (
-            <p>{`ERROR:`}</p>
+            <p>{`ERROR: fail fetch`}</p>
           )}
         </tbody>
       </Table>

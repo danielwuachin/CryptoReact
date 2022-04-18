@@ -20,7 +20,6 @@ export const useFetch = (url: string) => {
       try {
         let res = await fetch(url);
 
-        //comprobando si hay error en consulta
         if (!res.ok) {
           // eslint-disable-next-line no-throw-literal
           throw {
