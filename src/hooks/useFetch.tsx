@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
-
+import {
+  errors,
+  FetchAllCryptos,
+  FetchSingleCrypto,
+} from "../interfaces/Interfaces";
+type all = FetchAllCryptos[];
+type single = FetchSingleCrypto[];
 export const useFetch = (url: string) => {
   const [data, setData] = useState([]);
   const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState({});
+  const [error, setError] = useState<errors>({
+    err: false,
+    status: 200,
+    statusText: "none",
+  });
 
   useEffect(() => {
     const getData = async (url: string) => {
@@ -23,7 +33,7 @@ export const useFetch = (url: string) => {
 
         setIsPending(false);
         setData(data);
-        setError({ err: false });
+        setError({ err: false, status: 200, statusText: "none" });
       } catch (err: any) {
         setIsPending(true);
         setError(err);

@@ -6,12 +6,17 @@ const Header = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">React Bootstrap</Navbar.Brand>
-          <Nav.Link as={NavLink} to="/single">
-            single
-          </Nav.Link>
+          <Navbar.Brand href="/">
+            <img
+              src="../assets/img/crypto7-light.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="crypto7-logo"
+            />
+          </Navbar.Brand>
           <Nav.Link as={NavLink} to="/">
-            single
+            home
           </Nav.Link>
         </Container>
       </Navbar>

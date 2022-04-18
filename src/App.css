@@ -3,6 +3,18 @@ body {
     background-color: rgba(0, 0, 0, 0.685) !important;
 }
 
+.background {
+    background-color: black;
+    /* background-image: url('../public/giphy.gif'); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -2;
+    position: fixed;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
