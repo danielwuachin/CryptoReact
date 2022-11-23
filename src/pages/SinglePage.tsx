@@ -22,13 +22,18 @@ const SinglePage = () => {
   const state = location.state as props;
 
   const { data, isPending } = useFetch(
-    `https://api.coinpaprika.com/v1/coins/${
+   /*  `https://api.coinpaprika.com/v1/coins/${
       state.id
     }/ohlcv/historical?start=${formatLastWeekDate(
       lastWeekDate,
       7
-    )}&end=${formatDate(currentDate)}`
+    )}&end=${formatDate(currentDate)}` */
+
+    `https://api.coinpaprika.com/v1/coins/btc-bitcoin/ohlcv/today` 
   );
+
+/*   console.log(data); */
+  
 
   return (
     <div className="mx-4">
@@ -43,12 +48,12 @@ const SinglePage = () => {
         ) : state.is_active ? (
           <>
             <TitleSingle
-              data={data}
+              data={data[0]}
               name={
                 cryptoName ? cryptoName : "Sorry, we can't find that crypto"
               }
             />
-            <CardsSingleCrypto data={data} />
+            <CardsSingleCrypto data={data[0]} />
             <TableSingleCrypto data={data} />
           </>
         ) : (

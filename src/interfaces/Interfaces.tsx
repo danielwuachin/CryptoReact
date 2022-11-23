@@ -27,5 +27,5 @@ export interface FetchSingleCrypto {
 
 export interface singleCrypto {
   name?: string;
-  data: FetchSingleCrypto[];
+  data: FetchSingleCrypto;
 }

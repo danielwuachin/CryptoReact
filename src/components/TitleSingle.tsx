@@ -1,7 +1,7 @@
 import { singleCrypto } from "../interfaces/Interfaces";
 
 const TitleSingle = ({ name, data }: singleCrypto) => {
-  let currentPrice: string = ((data[7].close + data[7].open) / 2).toFixed(4);
+  let currentPrice: string = ((data.close + data.open) / 2).toFixed(4);
 
   return (
     <div className="mb-5 mt-3 d-flex flex-sm-row flex-column justify-content-around align-items-center">
