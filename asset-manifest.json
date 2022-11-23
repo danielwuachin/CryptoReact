@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/CryptoReact/static/css/main.ac835527.css",
-    "main.js": "/CryptoReact/static/js/main.18cd53b1.js",
+    "main.css": "/CryptoReact/static/css/main.fee3cc2a.css",
+    "main.js": "/CryptoReact/static/js/main.a7850ba5.js",
     "static/js/787.7a722091.chunk.js": "/CryptoReact/static/js/787.7a722091.chunk.js",
-    "static/media/logo-dark.png": "/CryptoReact/static/media/logo-dark.e2057baeb13350438864.png",
     "index.html": "/CryptoReact/index.html",
-    "main.ac835527.css.map": "/CryptoReact/static/css/main.ac835527.css.map",
-    "main.18cd53b1.js.map": "/CryptoReact/static/js/main.18cd53b1.js.map",
+    "main.fee3cc2a.css.map": "/CryptoReact/static/css/main.fee3cc2a.css.map",
+    "main.a7850ba5.js.map": "/CryptoReact/static/js/main.a7850ba5.js.map",
     "787.7a722091.chunk.js.map": "/CryptoReact/static/js/787.7a722091.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac835527.css",
-    "static/js/main.18cd53b1.js"
+    "static/css/main.fee3cc2a.css",
+    "static/js/main.a7850ba5.js"
   ]
 }
